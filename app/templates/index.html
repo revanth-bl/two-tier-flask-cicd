@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two-Tier Flask CI/CD</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background:#0f172a;
+            color:white;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            height:100vh;
+            margin:0;
+        }
+
+        .card{
+            background:#1e293b;
+            padding:40px;
+            border-radius:12px;
+            text-align:center;
+            width:600px;
+            box-shadow:0 0 25px rgba(0,0,0,.3);
+        }
+
+        h1{
+            color:#38bdf8;
+        }
+
+        table{
+            width:100%;
+            margin-top:25px;
+            border-collapse:collapse;
+        }
+
+        td,th{
+            padding:10px;
+            border:1px solid #475569;
+        }
+
+        th{
+            background:#334155;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<h1>Two-Tier Flask CI/CD Project</h1>
+
+<p>Built from scratch by <strong>Revanth BL</strong></p>
+
+<table>
+
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Message</th>
+</tr>
+
+{% for row in messages %}
+<tr>
+<td>{{ row[0] }}</td>
+<td>{{ row[1] }}</td>
+<td>{{ row[2] }}</td>
+</tr>
+{% endfor %}
+
+</table>
+
+</div>
+
+</body>
+</html>

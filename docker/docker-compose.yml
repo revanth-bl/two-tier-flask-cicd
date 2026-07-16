@@ -1,0 +1,54 @@
+version: "3.9"
+
+services:
+
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+
+    restart: always
+
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: devops
+
+    ports:
+      - "3306:3306"
+
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ../database/init.sql:/docker-entrypoint-initdb.d/init.sql
+
+    networks:
+      - two-tier-network
+
+  flask:
+
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+
+    container_name: two-tier-flask-app
+
+    restart: always
+
+    depends_on:
+      - mysql
+
+    ports:
+      - "5000:5000"
+
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_DB: devops
+
+    networks:
+      - two-tier-network
+
+volumes:
+  mysql-data:
+
+networks:
+  two-tier-network:
