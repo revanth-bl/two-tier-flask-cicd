@@ -149,7 +149,6 @@ GitHub Actions                 Jenkins Pipeline
 
 ![Architecture Diagram](diagrams/architecture-diagram.png)
 
-> If your architecture diagram uses a different filename, update the path above to match the file inside `diagrams/`.
 
 ---
 
