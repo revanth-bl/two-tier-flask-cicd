@@ -768,13 +768,13 @@ The following screenshots document the actual project deployment and CI/CD workf
 
 ### AWS EC2 Instance
 
-![AWS EC2 Instance](assets/screenshots/01-aws-ec2-instance.png)
+![AWS Security Group](assets/screenshots/02-aws-security-group.png)
 
 Shows the AWS EC2 instance used to host the Ubuntu server and deployment environment.
 
 ### AWS Security Group
 
-![AWS Security Group](assets/screenshots/02-aws-security-group.png)
+![AWS EC2 Instance](assets/screenshots/01-aws-ec2-instance.png)
 
 Shows the security group configuration used to control inbound access to the EC2 instance.
 
