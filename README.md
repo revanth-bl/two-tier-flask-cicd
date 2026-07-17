@@ -791,21 +791,15 @@ Shows the Jenkins interface used to manage and execute the pipeline.
 
 Shows the Docker image and running containers created during deployment.
 
+### Jenkins Failed
+
+![Jenkins Failed](assets/screenshots/07-jenkins-build-success.png)
+
+Shows a Failed Jenkins build.
+
 ### Jenkins Build Success
 
-![Jenkins Build Success](assets/screenshots/07-jenkins-build-success.png)
-
-Shows a successful Jenkins build.
-
-### Deployed Application
-
-![Deployed Application](assets/screenshots/08-deployed-application.png)
-
-Shows the deployed application running successfully.
-
-### Jenkins Docker Compose Deployment
-
-![Jenkins Docker Compose Deployment](assets/screenshots/jenkins-docker-compose-deployment.png)
+![Shows a successful Jenkins build](assets/screenshots/jenkins-docker-compose-deployment.png)
 
 Shows the Docker Compose deployment process executed by Jenkins.
 
@@ -821,15 +815,11 @@ Shows Jenkins checking out the source code from GitHub.
 
 Shows the final successful Jenkins build result.
 
-### CI/CD Architecture Diagram
+### Deployed Application
 
-![CI/CD Architecture Diagram](assets/screenshots/architecture-diagram.png)
+![Deployed Application](assets/screenshots/08-deployed-application.png)
 
-Provides a visual overview of the complete CI/CD architecture.
-
-### CI/CD Workflow Diagram
-
-![CI/CD Workflow Diagram](assets/screenshots/cicd-workflow-diagram.png)
+Shows the deployed application running successfully.
 
 Shows the flow from source code to automated validation, build, deployment, and the running application.
 
